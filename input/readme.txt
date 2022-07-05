@@ -1,0 +1,1 @@
+put your pdf in this folder with name: fatura.pdf

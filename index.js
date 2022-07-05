@@ -83,7 +83,7 @@ const getTransactionsSection = (json) => {
 
 const convertToJson = () => {
   return new Promise((resolve, reject) => {
-    exec(`pdf2json input/fatura.pdf -upw ${PDFPASS}`, (error, stdout, stderr) => {
+    exec(`pdf2json input/fatura.pdf -upw ${PDFPASS} input/fatura.json`, (error, stdout, stderr) => {
       if (error) {
         console.log(`error: ${error.message}`);
         reject()
